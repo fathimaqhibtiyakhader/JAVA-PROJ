@@ -919,4 +919,4 @@ public class ScamDetectorGUI extends JFrame {
             gui.setVisible(true);  // Display the window to the user
         });
     }
-}
+} 
