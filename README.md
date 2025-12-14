@@ -1,11 +1,12 @@
 
 ## Scam Detector / Suspect Pattern Detector(a.k.a Scam Shield):
 
+
 ## Overview:
 Crime is a perasive societal issue in todays world.It necessitates effective and efficient management by all of us.
 The Scam Detector is a Java-based desktop application designed to identify scam messages and suspicious URLs using rule-based pattern matching and risk assessment.
 
-
+---
 
 ## Abstract:
 Suspect Pattern Detection is a Java-based application that scans textual data for specific patterns associated with suspicious or sensitive content. The system processes input text line by line and identifies occurrences of predefined keywords or phrases.
@@ -13,6 +14,8 @@ Each match is recorded along with its location in the text, and a summary report
 It is structured to handle plain text files and produce a clear output indicating the presence and frequency of detected patterns. The project focuses on basic text analysis and pattern recognition within a controlled dataset.​
 This project offers a foundational approach to automated pattern detection in textual records, providing a streamlined method for identifying potentially critical information.
 By reducing manual effort and enhancing consistency in data review, Suspect Pattern Detection contributes to the broader goal of improving investigative efficiency and supporting early identification of crime-related indicators.
+
+--- 
 ​
 The system scans user-provided text or URLs, detects predefined scam indicators (urgency phrases, phishing keywords, suspicious domains, etc.), and classifies the content into **risk levels** such as:
 
@@ -48,7 +51,7 @@ This project focuses on clarity, modular design, and explainable detection, maki
 
 * **Formatted Result Output with Risk Indicators**
 
-  
+---
 
 ## Installation / Setup Instructions 
 Step 1: Install java 
@@ -73,6 +76,7 @@ The suspect keywords found
 The line numbers where they appear 
 The number of matches detected
 
+---
 
 ## USER MANUAL  
 STARTING THE APPLICATION: 
@@ -92,6 +96,7 @@ After processing, the system displays Which keyword is found on which line it wa
 ENDING SESSION:  
 Once the results are displayed, the user can close the program or run it again with a   different text file. 
 
+---
 
 ## System Architecture
 
@@ -114,13 +119,22 @@ User Input → GUI Controller → Pattern Matcher / URL Analyzer
 * **Sorting Engine** – Organizes detected patterns
 * **Display Manager** – Renders formatted output
 
+---
+
 ## How the System Works
-User inputs a message or URL
-Text is normalized and scanned using regex-based patterns
-URLs are extracted and analyzed independently
-Each detected indicator is categorized and stored
-A final risk score is calculated
-Results are formatted and displayed to the user
+* User inputs a message or URL
+
+* Text is normalized and scanned using regex-based patterns
+
+* URLs are extracted and analyzed independently
+
+* Each detected indicator is categorized and stored
+
+* A final risk score is calculated
+
+* Results are formatted and displayed to the user
+
+---
 
 ## How Detection Works
 
@@ -156,7 +170,8 @@ else return "NO RISK";
 
 ---
 
-##  Example Code Snippets
+## Code Snippets
+  (For reference)
 
 ### Scam Pattern Matching
 
@@ -260,6 +275,8 @@ calculateRisk() – Computes final risk based on matches
 Relationships
 Has many Match objects (1 → *)
 
+
+
 **Match (Detected Scam Indicator)**
 Represents a single detected scam pattern from text or URL.
 
@@ -274,6 +291,8 @@ Match(String category, String text, URLAnalysis urlAnalysis)
 Relationships
 Each Match belongs to one ScanResult
 Each Match have URLAnalysis (0..1)
+
+
 
 **URLAnalysis (URL Risk Evaluation)**
 Handles detection and verification of suspicious URLs.
@@ -297,29 +316,40 @@ ScamDetectorGUI → URLAnalysis	Uses
 ScanResult → Match	One-to-Many
 Match → URLAnalysis	Optional Association
 
+---
+
+
 **Design Highlights** 
 ✔ Encapsulation of detection logic
 ✔ Separation of UI, logic, and data
 ✔ Reusable and extensible structure
 ✔ Easy integration of future modules
 
+--- 
+
 ## Technologies Used:
 * Java JDK 25 Latest version​
 * Java Swing​
 * VS Code 
 
-## REQUIREMENTS​
+----
+## TECHNICAL REQUIREMENTS:​
 **Hardware:**
 High-performance CPUs or GPUs (e.g., NVIDIA RTX/AI GPUs Intel i7/i9,).​
 Memory (RAM): At least 16–32 GB for handling large datasets and real-time analysis. ​
 Storage: SSDs with 1 TB+ capacity for storing datasets, logs, and model files. ​
 ​Networking: Stable internet(120 Mbps or higher). ​
+
+
+
 ​
 ​**Software:** 
 Operating System:  Windows or Mac or linux.​
 ​Programming Languages: Java 25 latest LTS version, html.​
 ​Databases: SQL(Curretly Jawa Swing for temporary data storage)​
-​Security Tools: Encryption libraries, access control, and audit logging.(Still under development)​
+​Security Tools: Encryption libraries, access control, and audit logging.(Still under development)
+
+---​
 ​
 ## Future Enhancements
 **Planned Improvements**
@@ -335,6 +365,8 @@ Real-time website monitoring with visual similarity checks
 
 Future Scope:
 Our Scam Detector(ScamSheild) aims to evolve into a comprehensive, real-time scam prevention solution by supporting multi-format detection, advanced URL intelligence, and proactive threat warnings.
+
+---
 
 ## Dependencies
 This project uses standard Java SE libraries only. No external third-party dependencies are required.
@@ -352,32 +384,42 @@ Compiles and runs using:
 javac ScamDetectorGUI.java
 java ScamDetectorGUI
 
+---
+
 ## Limitations:
 Currently, the project only handles text-based content and URL analysis. It cannot analyze images, videos, audio files, or other multimedia content that scammers increasingly use to deceive victims. 
 The absence of multi-modal detection capabilities limits the system's effectiveness against modern scams that employ visual deception, fake logos, or manipulated screenshots.
-Rule-based detection may produce false positivesCreative or novel scam language may evade patterns
-New scam types require manual pattern updatesCurrently supports text and URLs only
-No image, video, or audio analysis Performance depends on system resources
+Rule-based detection may produce false positivesCreative or novel scam language may evade patterns.Moreover, new scam types require manual pattern updatesCurrently supports text and URLs only.
+No image, video, or audio analysis Performance depends on system resources.
 
+---
 
 ## Project Status:
 
-This project is still under development. Current implementation focuses on rule-based detection. More advanced features are in development.
 
+This project is still under development. Current implementation focuses on rule-based detection. More advanced features are yet in development.
+
+---
 
 ## Acknowledgements:
 Thanks to open-source documentation, developer communities, and educational resources that made this project possible.
 
+---
 
 ## Author:
   
   Fathima Qhibtiya Khader
- https://github.com/fathimaqhibtiyakhader/JAVA-PROJ 
+    
+    https://github.com/fathimaqhibtiyakhader/JAVA-PROJ 
+---
 
 ## Contact details:
 For feedback, suggestions, or collaboration reach me out at:
 
 **Email**:qhibtitya@gmail.com
 
+---
 
 If you find this project useful, consider starring the repository!
+
+---
