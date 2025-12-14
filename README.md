@@ -375,7 +375,9 @@ Thanks to open-source documentation, developer communities, and educational reso
  https://github.com/fathimaqhibtiyakhader/JAVA-PROJ 
 
 ## Contact details:
-For feedback, suggestions, or collaboration reach me out at :
+For feedback, suggestions, or collaboration reach me out at:
+
 **Email**:qhibtitya@gmail.com
+
 
 If you find this project useful, consider starring the repository!
